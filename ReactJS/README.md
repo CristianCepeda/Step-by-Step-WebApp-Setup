@@ -1,12 +1,22 @@
-### Create React App
+## Create React App
+
+### Get Started Immediately
+Clone this Project and focus on the code. You'll be good to go.
+
+  ```shell
+  cd Desktop/Projects
+  git clone https://github.com/CristianCepeda/Step-by-Step-WebApp-Setup.git
+  cd Step-by-Step-WebApp-Setup/ReactJS
+  yarn install
+  ```
+
+### Step-by-Step Guide
 
 Step 1
 - Create a new directory so that we can initialize a package.json file by running either command. Answer the questions it asks to fill in the file.
 
   ```shell
   yarn init
-  ```
-  ```shell
   npm init
   ```
 
@@ -20,8 +30,8 @@ Step 2
 
   - After the dev dependencies have finished installing add these scripts to the file as well.
 
-  ```json
-  "scripts": {
+    ```json
+    "scripts": {
       "dev": "webpack -wd",
       "build": "webpack --config webpack.config.js",
       "http-server": "http-server dist/"
@@ -41,6 +51,7 @@ Step 3
   yarn add babel-loader babel-core babel-preset-es2015 babel-preset-react -D
   yarn add react react-dom
   ```
+
 Step 4
   - Lets go into or webpack.config.js file and add a module section. This is so we can specify are loaders. Loaders are one functionality of Webpack which make sure that webpack knows how to process specific type of files.
   - This will be a good time to also install any additional dev dependencies that will be needed so we can use additional loaders. [ Ex. css-loader or file-loader or image-webpack-loader] see the documentation on how to add these dependencies.
